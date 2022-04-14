@@ -1,9 +1,22 @@
 <template>
 	<div id="tab-bar">
-    <div class="tab-bar-item">首页</div>
-    <div class="tab-bar-item">分类</div>
-    <div class="tab-bar-item">购物车</div>
-    <div class="tab-bar-item">我的</div>
+    <!-- <div class="tab-bar-item">
+			<img src="../../assets/img/icon01.png" alt="">
+			首页
+		</div>
+    <div class="tab-bar-item">
+			<img src="../../assets/img/icon01.png" alt="">
+			分类
+		</div>
+    <div class="tab-bar-item">
+			<img src="../../assets/img/icon01.png" alt="">
+			购物车
+		</div>
+    <div class="tab-bar-item">
+			<img src="../../assets/img/icon01.png" alt="">
+			我的
+		</div> -->
+		<slot></slot>
   </div>
 </template>
 
@@ -27,9 +40,5 @@
     box-shadow: 0, -1px 1px rgba(100, 100, 100, 0.2);
   }
 
-  .tab-bar-item {
-    flex: 1;
-    text-align: center;
-    height: 49px;
-  }
+
 </style>
