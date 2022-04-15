@@ -1,8 +1,8 @@
 <template>
-    <div class="tab-bar-item">
-        <slot name="item-icon"></slot>
-        <slot name="item-name"></slot>
-    </div>
+  <div class="tab-bar-item">
+    <slot name="item-icon"></slot>
+    <slot name="item-name"></slot>
+  </div>
 </template>
 
 
@@ -13,7 +13,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style>
   .tab-bar-item {
     flex: 1;
     text-align: center;

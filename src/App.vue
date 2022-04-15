@@ -2,20 +2,37 @@
   <div id="App">
     <Tabbar>
       <TabbarItem>
-        <img slot="item-icon" src="./assets/img/icon01.png" alt="">
-			  <div slot="item-name">首页</div>
+        <!-- #是插槽的语法糖格式 -->
+        <template #item-icon>
+          <img src="./assets/img/icon01.png" alt="">
+        </template>
+        <template #item-name>
+          <div>首页</div>
+        </template>
       </TabbarItem>
       <TabbarItem>
-        <img slot="item-icon" src="./assets/img/icon02.png" alt="">
-			  <div slot="item-name">分类</div>
+        <template v-slot:item-icon>
+          <img src="./assets/img/icon02.png" alt="">
+        </template>
+        <template v-slot:item-name>
+          <div>分类</div>
+        </template>
       </TabbarItem>
       <TabbarItem>
-        <img slot="item-icon" src="./assets/img/icon03.png" alt="">
-			  <div slot="item-name">购物车</div>
+        <template v-slot:item-icon>
+          <img src="./assets/img/icon03.png" alt="">
+        </template>
+        <template v-slot:item-name>
+          <div>购物车</div>
+        </template>
       </TabbarItem>
       <TabbarItem>
-        <img slot="item-icon" src="./assets/img/icon04.png" alt="">
-			  <div slot="item-name">我的</div>
+        <template v-slot:item-icon>
+          <img src="./assets/img/icon04.png" alt="">
+        </template>
+        <template v-slot:item-name>
+          <div>我的</div>
+        </template>
       </TabbarItem>
     </Tabbar>
   </div>
